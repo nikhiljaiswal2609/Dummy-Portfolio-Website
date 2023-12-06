@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f93033b172.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="ph333.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Learning Front-end Development</p>
+                <h1>Hi, I'm <span>Nikhil Jaiswal</span> 
+                    <br>Asst Manager at
+                    <br> Reliance JIO</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------about section------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A recent graduate with a focus on front-end development, currently serving as Assistant Manager at Reliance Jio. Passionate about creating seamless user experiences and staying abreast of the latest web technologies. Eager to apply academic knowledge and gain practical experience in a dynamic corporate environment. Committed to enhancing skills, collaborating with teams, and driving innovation in web development. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('soft-skills')">SOFT-SKILLS</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Graduation:&nbsp;&nbsp;&nbsp;</span>Gyan Ganga Institute of Technology & Science, Jabalpur <br> 9.16 CGPA</li>
+                            <li><span>Class XII:&nbsp;&nbsp;&nbsp;</span>J.P.V.D.A.V Public School, Katni, MP<br>Percentage 82.45</li>
+                            <li><span>Class X:&nbsp;&nbsp;&nbsp;</span>J.P.V.D.A.V Public School, Katni, MP<br>Percentage 90.25</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Basic C and C++</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JAVASCRIPT</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="soft-skills">
+                        <ul>
+                            <li><span>Time Management</span></li>
+                            <li><span>Team Work</span></li>
+                            <li><span>Patience</span></li>
+                            <li><span>Determined</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------services------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint officiis error quae, delectus dicta.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>DBMS Concepts</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint officiis error quae, delectus dicta.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>OOP's Concepts</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint officiis error quae, delectus dicta.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------portfolio---------------------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented persons of the world. Download it from Playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented persons of the world. Download it from Playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented persons of the world. Download it from Playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------------------------contact-------------------------------------------- -->
+    
+    <div id ="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> nikhiljaiswal2609@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9770767528</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" email="Email" placeholder="Your Email id" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea> 
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Nikhil. Made with <i class="fa-solid fa-heart"></i> by Nikhil Jaiswal </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
